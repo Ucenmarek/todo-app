@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/_inc/vendor/composer" />
+      <path value="$PROJECT_DIR$/_inc/vendor/catfan/medoo" />
+      <path value="$PROJECT_DIR$/_inc/vendor/joseph-lenton/php-error" />
+    </include_path>
+  </component>
+</project>

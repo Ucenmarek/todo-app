@@ -18,7 +18,7 @@
 
            reg.done(function(data) {
                console.log(data);
-              // if (data === 'zapisane') {
+               //if (data === 'ok') {//
 
 
                    var li = $('<li class="list-group-item">'+imput.val()+'</li>')
@@ -27,18 +27,7 @@
                        .delay(500)
                        .animate({ backgroundColor: farba });
 
-
-
-
-
-
-
-
-
-
-
-
-               //}
+                // }
            });
 
 
@@ -47,12 +36,12 @@
     });
 
    imput.on('keypress', function (event) {
-        if (event.wich === 13) {
+        if (event.which === 13) {
 
             form.submit();
             return false;
         }
-    console.log(wich)
+    //console.log(event.which)
     });
 
 }(jQuery));

@@ -32,10 +32,10 @@ $data = $database -> select('ithems','text');
         <p class="form-group ">
             <textarea name="message" id="text" cols="30" rows="3" placeholder="tu nieco napis" class="form-control" ></textarea>
         </p>
-       <p class="form-group ">
+  <!--     <p class="form-group ">
 
              <button type="submit" class=" btn-sm btn-danger">Ad new thing</button>
-        </p> 
+        </p> -->
     </form>
 </div>
 

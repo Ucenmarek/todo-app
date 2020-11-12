@@ -4,6 +4,8 @@
         imput = $('#text'),
         farba = '#303030'
 
+    imput.val('').focus();
+
     form.on('submit',function (event) {
        event.preventDefault() ;
 
@@ -18,7 +20,7 @@
 
            reg.done(function(data) {
                console.log(data);
-               //if (data === 'ok') {//
+               //if (data =='ok') {
 
 
                    var li = $('<li class="list-group-item">'+imput.val()+'</li>')
@@ -27,7 +29,8 @@
                        .delay(500)
                        .animate({ backgroundColor: farba });
 
-                // }
+                 //} 
+                    
            });
 
 

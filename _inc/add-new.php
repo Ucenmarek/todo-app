@@ -19,7 +19,7 @@ $id = $database->insert('ithems', [
    /*  echo 'uspesny zapis do dtb <hr>';
     echo '<a href="/tapp/index.php">back home</a>';
     header('location:http://localhost/tapp/index.php');*/
-    echo'ok';
-    die();
+    //echo'ok';
+    die('ok');
  }
 

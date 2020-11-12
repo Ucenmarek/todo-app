@@ -30,7 +30,7 @@ $data = $database -> select('ithems','text');
 
     <form id="add-form" action="_inc/add-new.php" class="col-sm-6" method="post">
         <p class="form-group ">
-            <textarea name="message" id="text" cols="30" rows="3" placeholder="tu nieco napis" class="form-control" ></textarea>
+            <textarea name="message" id="text" cols="30" rows="3" placeholder="Novy zapis" class="form-control" ></textarea>
         </p>
   <!--     <p class="form-group ">
 

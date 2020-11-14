@@ -21,7 +21,7 @@ $id = $database->update
 // uspešné update do dtb a navrat na index
  if ($id){
    
-    header('location:http://localhost/tapp/index.php');
+    header('location:'.$site_url.'index.php');
    
     
  }

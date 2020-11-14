@@ -1,7 +1,7 @@
 (function ($) {
 
     var form = $('#add-form'),
-        imput = $('#text'),
+        imput = form.find ('#text'),
         farba = '#303030'
 
     imput.val('').focus();

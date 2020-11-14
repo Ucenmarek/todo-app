@@ -1,5 +1,5 @@
 
-<?php include "shared/header.php" ?>
+<?php include_once "shared/header.php" ?>
 <div class="page-header">
     <h1>VERY MUCH TODO LIST</h1>
     <hr>
@@ -28,7 +28,7 @@ $data = $database -> select('ithems','text');
 <!--        <li class="list-group-item">a toto je tiez nieco podobne</li>-->
     </ul>
 
-    <form id="add-form" action="_inc/add-new.php" class="col-sm-6" method="post">
+    <form id="add-form" action="_inc/add-item.php" class="col-sm-6" method="post">
         <p class="form-group ">
             <textarea name="message" id="text" cols="30" rows="3" placeholder="Novy zapis" class="form-control" ></textarea>
         </p>
@@ -40,7 +40,7 @@ $data = $database -> select('ithems','text');
 </div>
 
 
-<?php include "shared/foother.php" ?>
+<?php include_once "shared/foother.php" ?>
 
 
 

@@ -7,6 +7,9 @@
 
 //require_once "vendor/catfan/medoo/src/Medoo.php";
 
+// variabiles
+$site_url = 'http://localhost/tapp/';
+
 use Medoo\Medoo;
 // conect to dt
 $database = new Medoo([

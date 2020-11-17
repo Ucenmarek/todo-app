@@ -6,7 +6,7 @@
 </div>
 
 <?php
-$data = $database -> select('ithems','text');
+$data = $database -> select('ithems',['id','text']);
 //echo '<pre>';
 //print_r($database->info());
 //echo '</pre>';
@@ -19,7 +19,16 @@ $data = $database -> select('ithems','text');
 
         <?php
                 foreach ($data as $item) {
-                    echo '<li class="list-group-item">'. $item. '</li>';
+                    echo '<li class="list-group-item ">';
+                    echo $item ['text'];
+                    //echo '<div class = "row">';
+                        echo '<div class ="controls float-right">';
+                        echo '<a href = "edit.php?id='.$item['id'].'" class="edit-link">edit</a>';
+                        echo '<a href = "delete.php?id=' . $item['id'] . '" class=" delete-link ">delete</a>';
+                        echo '</div>';
+                   // echo '</div>';
+                    echo '</li>';
+
                 }
 
 

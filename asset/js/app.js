@@ -1,5 +1,5 @@
 (function ($) {
-
+     /*edit-form*/
     var form = $('#add-form'),
         imput = form.find ('#text'),
         farba = '#303030'
@@ -37,6 +37,7 @@
 
 
     });
+    /*odoslanie cez enter*/
 
    imput.on('keypress', function (event) {
         if (event.which === 13) {
@@ -46,6 +47,14 @@
         }
     //console.log(event.which)
     });
+
+    /*delete item potvrdenie cez confirm*/
+    $('delete-form').on('submit' , function (event) {
+        return confirm('Naozaj to chceš vzmayať ?');
+
+
+        
+    })
 
 }(jQuery));
 

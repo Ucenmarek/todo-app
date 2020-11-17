@@ -28,6 +28,7 @@ include_once "shared/header.php";
         <p class="form-group ">
             <input name="id" type="hidden" value="<?php echo $_GET['id'] ?>">
             <button type="submit" class=" btn-sm btn-danger">Edit ithems</button>
+            <span class="controls"><a href="<?php echo $site_url?>"class="back-link ">back</a></span>
         </p>
     </form>
 </div>

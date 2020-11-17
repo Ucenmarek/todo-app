@@ -1,6 +1,7 @@
-<?php require_once "_inc/config.php"?>
+<?php require_once "_inc/config.php" ?>
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
@@ -10,12 +11,13 @@
     <link rel="stylesheet" href="asset/css/style.css">
 
 </head>
+
 <body>
-<header>
+    <header>
 
 
-</header>
+    </header>
 
-<main>
+    <main>
 
-    <div class="container">
+        <div class="container">

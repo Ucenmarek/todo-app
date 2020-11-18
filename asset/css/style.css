@@ -1,13 +1,22 @@
 .controls a{
-    font-size: 13px;
+   font-size: 13px;
     margin-left: 10px;
     text-decoration: none;
 }
 .delete-link{
-    font-size: 7px;
-    color: #e99b9b;
+    
+    color:#888;
 }
 .delete-link:hover{
 
     color: red;
 }
+.back-link{
+    color: #888 ;
+}
+.back-link:hover{
+
+    color: #00bc8c;
+    
+}
+

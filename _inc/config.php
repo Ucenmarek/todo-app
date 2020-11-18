@@ -20,4 +20,3 @@ $database = new Medoo([
     'password' => '',
     'charset' => 'utf-8'
 ]);
-

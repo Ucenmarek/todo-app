@@ -21,13 +21,22 @@
            reg.done(function(data) {
                console.log(data);
                //if (data =='ok') {
+                 $.ajax({url:'/tapp'}).done(function (html) {
 
-
-                   var li = $('<li class="list-group-item">'+imput.val()+'</li>')
+                    var newitem = $(html).find('li:last-child');
+                    
+                        newitem.appendTo('.list-group')
+                                .css({backgroundColor:'#00bc8c'})
+                                .delay(500)
+                                .animate({backgroundColor:farba});
+                  
+                     
+                 });
+                 /*  var li = $('<li class="list-group-item">'+imput.val()+'</li>')
                    li  .appendTo('.list-group')
                        .css({ backgroundColor:'#00bc8c'})
                        .delay(500)
-                       .animate({ backgroundColor: farba });
+                       .animate({ backgroundColor: farba });*/
 
                  //} 
                     
@@ -48,9 +57,18 @@
     //console.log(event.which)
     });
 
-    /*delete item potvrdenie cez confirm*/
-    $('delete-form').on('submit' , function (event) {
-        return confirm('Naozaj to chceš vzmayať ?');
+    /*EDIT
+        nastavenie sa rovno na text*/
+    
+    $('#edit-form').find('#text').select();
+
+
+
+    /* DELETE
+    
+    delete item potvrdenie cez confirm*/
+    $('#delete-form').on('submit' , function (event) {
+        return confirm('Naozaj to chceš vzmazať ?');
 
 
         

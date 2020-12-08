@@ -14,7 +14,16 @@ require 'config.php';
 $id = $database->update
     ('ithems', 
     ['text' =>  $_POST["message"]],
+    
     ['id' => $_POST ['id']]
+
+  );
+
+$id = $database->update(
+    'ithems',
+    
+    ['autor' => $_POST["autor"]],
+    ['id' => $_POST['id']]
 
   );
 

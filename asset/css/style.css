@@ -19,4 +19,16 @@
     color: #00bc8c;
     
 }
+h3{
+    font-size: 1.1rem;
+}
+p{
+    margin-bottom: 0;
+}
+ textarea.form-control{
+     margin-bottom: 2em;
+ }
 
+ .autor{
+     margin-bottom: 15px;
+ }

@@ -2,8 +2,11 @@
      /*edit-form*/
     var form = $('#add-form'),
         imput = form.find ('#text'),
-        farba = '#303030'
-
+        imputAutor =form.find ('#autor'),
+        farba = '#303030',
+        editform = $('#edit-form'),
+        imputEdit = editform.find ('#text'),
+        imputEditAutor = editform.find('#autor')
     imput.val('').focus();
 
     form.on('submit',function (event) {
@@ -51,16 +54,39 @@
    imput.on('keypress', function (event) {
         if (event.which === 13) {
 
-            form.submit();
+            imputAutor.focus();
+           // form.submit();
             return false;
         }
+    
+
+    
     //console.log(event.which)
     });
 
+    imputAutor.on('keypress', function (event) {
+        if (
+            event.which === 13) {
+            form.submit();
+            imput.val('').focus();
+            imputAutor.val('');
+            return false;
+        }
+
+    });
     /*EDIT
         nastavenie sa rovno na text*/
     
-    $('#edit-form').find('#text').select();
+    // $('#edit-form').find('#text').select();
+    imputEdit.select();
+    imputEdit.on("keypress",function (event) {
+        if (event.which===13) {
+            imputEditAutor.select();
+            return false;
+            
+        }
+        
+    })
 
 
 

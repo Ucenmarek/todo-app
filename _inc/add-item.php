@@ -10,7 +10,8 @@ require 'config.php';
 
 // vlozenie do dt
 $id = $database->insert('ithems', [
-    'text' =>  $_POST["message"]
+    'text' =>  $_POST["message"],
+    'autor' => $_POST["actor"]
 
 ]);
 
